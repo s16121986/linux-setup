@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function wsi_install_php82 {
+function wsi_install_php83 {
   wsi_ensure_package_installable php83 "PHP8.3 already installed"
 
   phpKey="php8.3"
