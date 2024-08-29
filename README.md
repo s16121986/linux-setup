@@ -30,8 +30,7 @@ sudo visudo
 ### 2. Enable systemd
 
 ```shell
-sudo touch /etc/wsl.conf
-sudo echo -e "[boot]\nsystemd=true">/etc/wsl.conf
+[ -s /etc/wsl.conf ] || echo -e "[boot]\nsystemd=true" | sudo tee -a /etc/wsl.conf
 ```
 
 ### 3. Restart WSL (Windows Terminal)
