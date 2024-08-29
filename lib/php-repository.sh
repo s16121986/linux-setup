@@ -12,7 +12,7 @@ function wsi_init_php_repository {
 
     sudo apt -y install apt-transport-https lsb-release ca-certificates wget
     local php_proxy="https://ftp.mpi-inf.mpg.de/mirrors/linux/mirror/deb.sury.org/repositories/php/"
-    sudo cp "$pkg_include_path/conf/php/apt.gpg" /etc/apt/trusted.gpg.d/php.gpg
+    sudo cp "$WSI_ROOT_PATH/conf/php/apt.gpg" /etc/apt/trusted.gpg.d/php.gpg
     echo "deb $php_proxy $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
     #sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
     #sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'

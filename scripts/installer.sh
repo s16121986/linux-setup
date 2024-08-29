@@ -7,16 +7,16 @@ function wsi_run_installer {
     array=()
     n=0
     for i in ${WSI_PACKAGES[@]}; do
-      if ! wsi_is_package_installed "${i}"; then
+#      if ! wsi_is_package_installed "${i}"; then
         array[n]=$i
         n=$((n + 1))
-      fi
+#      fi
     done
 
-    if [ $n -eq 0 ]; then
-      comment "All packages installed"
-      break
-    fi
+#    if [ $n -eq 0 ]; then
+#      comment "All packages installed"
+#      break
+#    fi
 
     # echo
     title "Allowed packages:"
