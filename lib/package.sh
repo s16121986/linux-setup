@@ -36,6 +36,9 @@ function wsi_is_package_installed {
   "php82")
     return $(_file_exists "/usr/bin/php8.2")
     ;;
+  "php83")
+    return $(_file_exists "/usr/bin/php8.3")
+    ;;
   "nginx")
     return $(_package_exists "nginx")
     ;;

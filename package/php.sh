@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function wsi_install_php {
-  VERSIONS=("8.2" "8.1" "7.4")
+  VERSIONS=("8.3" "8.2" "8.1" "7.4")
 
   title "Choose PHP version to install:"
 
